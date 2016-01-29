@@ -1,0 +1,21 @@
+body{
+    margin:0rem;
+}
+.header{
+    padding:5rem 6rem;
+    color: #ffffff;
+    text-align: center;
+    background-color:#;
+    background-image:linear-gradient(150deg, rgb(138, 204, 209), #FFFFFF); 
+    box-sizing:border-box;
+}
+.name-zh{
+    font-size: 3.25rem;
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+}
+.name-en{
+    margin-bottom: 2rem;
+    font-weight: normal;
+    opacity: 0.7;
+}
