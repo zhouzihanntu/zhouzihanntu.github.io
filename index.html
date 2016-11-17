@@ -3,42 +3,561 @@
     <head>
         <title>resume</title>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-        <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="assets/semantic.min.css">
 
         <style type="text/css">
+            body{background-color: #f1f1f1;}
             .container{margin-top: 30px;}
+            .ui.container{background-color: #ffffff;width: 1030px;}
             .QRCodeContainer{width: 100%;height: 100%;background-color: #f6f6f6;}
-            .QRCodeContainer img{width: 250px;height: 250px;}
+            .QRCodeContainer img{width: 100%;/*height: 100%;*/}
+
+
+            .ui.segment {
+                position: relative;
+                background: #FFF;
+                box-shadow: 0 0px 5px 0px #f1f1f1;
+                margin: 1rem 0;
+                padding: 1em;
+                border-radius: .28571429rem;
+                border: none;
+            }
+
+            .ui.segment.items:hover{
+                border: 1px solid #f1f1f1;
+            }
+
+            .ui.celled.grid > .row > .column.header-name, .ui.celled.grid > .row > .column.header-contact{
+                padding: 2.5em 2.5em;
+            }
+
+            .ui.celled.grid > .row > .column.header-name > .ui.huge.header{
+                font-size: 5em;
+            }
+
+            .ui.celled.grid > .row > .column.header-name > .ui.large.header{
+                font-size: 1.4em;
+            }
+
+
+            .header-contact .item{
+                font-size: 1.3em;
+            }
+
+            .ui.tiny.image{
+                width: 60px;
+            }
+
+            .ui.items>.teritary-block{
+                margin: 0 0 0 10px;
+                /*padding-top: 15px;*/
+            }
+
+            .ui.bulleted.list > .description{
+                margin-bottom: 0.75em;
+            }
+
+            .secondary-title{
+                color: #999;
+                /*float: left;*/
+                padding: 0;
+                margin: 0 0 1.5em 0.5em;
+            }
+
+            .secondary-title-ch{
+                font-size: 20px;
+                /*float: left;*/
+                font-weight: 700;
+            }
+
+            .secondary-title-en{
+                font-size: 16px;
+                /*float: left;*/
+                /*clear: left;*/
+                color: #677;
+                font-variant: small-caps;
+                font-weight: 700;
+            }
+
+
+            .teritary-block .ui.list .item{
+                max-width: 560px;
+            }
+
+            .ui.centered.banner.ad.footer{
+                text-align: center;
+                font-weight: 900;
+                font-size: 2em;
+                line-height: 2em;
+                background-color: #ddd;
+            }
+
+
+            /**** progress bar ****/
+                /* Load animation */
+                @-webkit-keyframes load { 0% {
+                    stroke-dashoffset:0
+                    }
+                }
+                @-moz-keyframes load { 0% {
+                    stroke-dashoffset:0
+                    }
+                }
+                @keyframes load { 0% {
+                    stroke-dashoffset:0
+                    }
+                }
+
+                /* Container */
+                .progress {height: 9.5em;position: relative;display: inline-block;padding: 0;text-align: center;margin: 0;}
+                /* Item */
+                .progress>li {display: inline-block;position: relative;text-align: center;color: #93A2AC;font-family: Lato;font-weight: 100;margin: 0;}
+                .progress>li:before {content: attr(data-name);position: absolute;width: 100%;bottom: -2rem;font-weight: 400;}
+                .progress>li:after {content: attr(data-percent);position: absolute;width: 100%;top: 2.3rem;left: 0;font-size: 1.5rem;text-align: center;}
+                .progress svg {width: 6rem;height: 6rem;}
+                .progress svg:nth-child(2) {position: absolute;left: 0;top: 0;transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-ms-transform: rotate(-90deg);}
+                .progress svg:nth-child(2) path {fill: none;stroke-width: 25;stroke-dasharray: 629;stroke: rgba(255, 255, 255, 0.9);-webkit-animation: load 10s;-moz-animation: load 10s;-o-animation: load 10s;animation: load 10s;} 
+            /**** progress bar end ****/
+
+                .progress>li:last-child{
+                    margin-left: 3em;
+                }
+
+
         </style>
+
     </head>
 
     <body>
 
         <div class="ui container">
-            <div class="ui centered card briefInfo">
-                <div class="blurring dimmable image">
-                    <div class="ui dimmer">
-                        <div class="content">
-                            <div class="center QRCodeContainer">
-                                <img src="assets/QRCode.png"/>
+
+            <div class="ui celled grid">
+
+                <div class="row">
+                    <div class="seven wide column header-name">
+                        <div class="ui huge header">周子涵</div>
+                        <div class="ui large header">前端工程师/Web工程师</div>
+                    </div>
+                    <div class="six wide column header-contact">
+                        <div class="middle aligned content">
+                            <div class="ui list">
+                                <div class="item">
+                                    <i class="wechat icon"></i>
+                                    <div class="content">zhouzihanntu</div>
+                                </div>
+                                <div class="item">
+                                    <i class="mail icon"></i>
+                                    <div class="content">
+                                        <a href="mailto:zhouzihanntu@outlook.com">zhouzihanntu@outlook.com</a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="github icon"></i>
+                                    <div class="content">
+                                        <a href="https://github.com/zhouzihanntu">https://github.com/zhouzihanntu</a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="css3 icon"></i>
+                                    <div class="content">
+                                        <a href="http://codepen.io/zhouzihanntu/">http://codepen.io/zhouzihanntu/</a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="rss icon"></i>
+                                    <div class="content">
+                                        <a href="http://blog.csdn.net/zhouzihanntu">http://blog.csdn.net/zhouzihanntu</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <img src="https://avatars1.githubusercontent.com/u/14007659?v=3&s=466"/>
+                    <div class="three wide column header-avatar">
+                        <div class="ui card briefInfo">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center QRCodeContainer">
+                                            <img src="assets/QRCode.svg"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="assets/avatar.png"/>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="content">
-                    <a class="header" href="https://github.com/zhouzihanntu">zhouzihanntu</a>
-                    <div class="description">Front-End Web Developer in HangZhou. </div>
+
+                <div class="row">
+                    <div class="six wide column">
+                        <!-- education -->
+                        <div class="ui segment items content-education">
+                            <h3 class="secondary-title">
+                                <i class="student icon"></i>
+                                <span class="secondary-title-ch">教育信息</span>
+                                <span class="secondary-title-en">Education</span>
+                            </h3>
+                            <div class="item teritary-block">
+                                <div class="ui tiny image">
+                                    <img src="assets/cqupt.jpg">
+                                </div>
+                                <div class="middle aligned content">
+                                    <span class="header">
+                                        重庆邮电大学
+                                        <span class="meta">(2013-2017)</span>
+                                    </span>
+                                    <div class="meta">
+                                        <div class="ui list">
+                                          <span class="item">
+                                            <i class="university icon"></i>
+                                            <span class="content">
+                                                <span class="degree">本科</span>
+                                                <span class="major">信息工程</span>
+                                            </span>
+                                          </span>
+                                          <span class="item">
+                                            <i class="trophy icon"></i>
+                                            <span class="content">2014-2015 校三等奖学金</span>
+                                          </span>
+                                          <span class="item">
+                                            <i class="marker icon"></i>
+                                            <span class="content">通信与信息工程学院</span>
+                                          </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- language -->
+                        <div class="ui segment items content-language">
+                            <h3 class="secondary-title">
+                                <i class="translate icon"></i>
+                                <span class="secondary-title-ch">语言</span>
+                                <span class="secondary-title-en">Language</span>
+                            </h3>
+                            <div class="item teritary-block">
+                                <ul class="progress">
+                                    <li data-name="CET-4" data-percent="592">
+                                        <svg viewBox="-10 -10 220 220">
+                                            <g fill="none" stroke-width="6" transform="translate(100,100)">
+                                                <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+                                                <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl1)"/>
+                                                <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl1)"/>
+                                                <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl1)"/>
+                                                <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl1)"/>
+                                                <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl1)"/>
+                                            </g>
+                                        </svg> 
+                                        <svg viewBox="-10 -10 220 220">
+                                            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="497"></path>
+                                        </svg>
+                                    </li>
+                                    <li data-name="CET-6" data-percent="545">
+                                        <svg viewBox="-10 -10 220 220">
+                                            <g fill="none" stroke-width="6" transform="translate(100,100)">
+                                                <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+                                                <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl1)"/>
+                                                <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl1)"/>
+                                                <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl1)"/>
+                                                <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl1)"/>
+                                                <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl1)"/>
+                                            </g>
+                                        </svg> 
+                                        <svg viewBox="-10 -10 220 220">
+                                            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="457"></path>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="item teritary-block">
+                                <div class="meta">
+                                    <div class="ui list">
+                                      <span class="item">
+                                        <i class="certificate icon"></i>
+                                        <span class="content">
+                                            Business English Certificate Vantage
+                                        </span>
+                                      </span>
+                                      <span class="item">
+                                        <i class="certificate icon"></i>
+                                        <span class="content">
+                                            可阅读英文技术文档，善于通过 Stack Overflow 等技术社区解决问题。
+                                        </span>
+                                      </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- links -->
+                        <div class="ui segment items content-links">
+                            <h3 class="secondary-title">
+                                <i class="linkify icon"></i>
+                                <span class="secondary-title-ch">参与项目</span>
+                                <span class="secondary-title-en">Links</span>
+                            </h3>
+                            <div class="item teritary-block">
+                                <div class="ui relaxed divided list">
+                                    <div class="item">
+                                        <span class="content">
+                                            <span class="header">
+                                                <i class="large github icon"></i>
+                                                <a href="https://github.com/vuejs/cn.vuejs.org">cn.vuejs.org</a>
+                                            </span>
+                                            <span class="description">参与 vuejs 2.0 文档校对</span>
+                                        </span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="content">
+                                            <span class="header">
+                                                <i class="large github icon"></i>
+                                                <a href="https://github.com/xitu/gold-miner">gold-miner</a>
+                                            </span>
+                                            <span class="description">参与掘金翻译计划文章校对</span>
+                                        </span>
+                                    </div>
+                                    <div class="item">
+                                        <div class="content">
+                                            <span class="header">
+                                                <i class="large github icon"></i>
+                                                <a href="https://github.com/bootstrap-tagsinput/bootstrap-tagsinput">Bootstrap-tagsinput</a>
+                                            </span>
+                                            <span class="description">jQuery tags input plugin based on Twitter Bootstrap.</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="content">
+                                            <span class="header">
+                                                <i class="large github icon"></i>
+                                                <a href="https://github.com/zhouzihanntu/jquery-datepicker-for-unixstamp-output">jquery-datepicker-for-unixstamp-output</a>
+                                            </span>
+                                            <span class="description">A date-time-picker with unixstamp output.</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <span class="content">
+                                            <span class="header">
+                                                <i class="large github icon"></i>
+                                                <a href="https://github.com/zhouzihanntu/Ethernet-Frameparser">Ethernet Frameparser</a>
+                                            </span>
+                                            <span class="description">Python script to encapsulate and parse file.</span>
+                                        </span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="content">
+                                            <span class="header">
+                                                <i class="large github icon"></i>
+                                                <a href="https://github.com/zhouzihanntu/Hadoop-Java-API-Practice">Hadoop Java API Practice</a>
+                                            </span>
+                                            <span class="description">Operate hdfs filesystem in hadoop with Java API</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ten wide column">
+                        <div class="ui segment items content-skills">
+                            <h3 class="secondary-title">
+                                <i class="wizard icon"></i>
+                                <span class="secondary-title-ch">技能</span>
+                                <span class="secondary-title-en">Skills</span>
+                            </h3>
+                            <div class="item teritary-block">
+                                <div class="ui list">
+                                    <div class="item">
+                                        <span class="header">Web 开发</span>
+                                        <div class="list">
+                                            <div class="item">
+                                                <i class="bookmark icon"></i>
+                                                <div class="content">
+                                                    <span class="header">HTML/CSS</span>
+                                                    <span class="description">
+                                                        熟悉 W3C 标准，能根据 HTML 语义化和 CSS 模块化实现布局和效果。
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <i class="bookmark icon"></i>
+                                                <div class="content">
+                                                    <span class="header">Javascript</span>
+                                                    <span class="description">
+                                                        理解组件化思想，能独立完成可复用的 Javascript 组件开发。
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <i class="bookmark icon"></i>
+                                                <div class="content">
+                                                    <span class="header">项目实践</span>
+                                                    <span class="description">
+                                                        熟练使用 Bootstrap 和 jQuery 实现布局和功能需求，项目中使用过 Laravel 框架结合 Javascript 模版引擎进行开发，了解并使用过 Gulp 前端工具和 Browserify 进行模块管理，了解 Vuejs 等 MVVC 框架。
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <span class="header">其他</span>
+                                        <div class="list">
+                                            <div class="item">
+                                                <i class="bookmark icon"></i>
+                                                <div class="content">
+                                                    <span class="description">
+                                                        使用 Python 编写过压缩文件和解析帧结构的脚本。
+                                                        <a href="https://github.com/zhouzihanntu/Ethernet-Frameparser">
+                                                            <i class="linkify icon"></i>
+                                                            Ethernet-Frameparser
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <i class="bookmark icon"></i>
+                                                <div class="content">
+                                                    <span class="description">
+                                                        编写 Java 代码操作 Hadoop 分布式文件系统
+                                                        <a href="https://github.com/zhouzihanntu/Hadoop-Java-API-Practice">
+                                                            <i class="linkify icon"></i>
+                                                            Hadoop-Java-API-Practice
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <i class="bookmark icon"></i>
+                                                <div class="content">
+                                                    <span class="description">
+                                                        熟悉 Linux 下常用命令行操作及配置，能熟练在 Linux、OS X、Windows 三大平台下进行开发。
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <i class="bookmark icon"></i>
+                                                <div class="content">
+                                                    <span class="description">
+                                                        熟练使用 Git 版本控制工具配合项目开发，熟练使用各种调试、抓包工具，熟悉 Photoshop 基本操作，能完成简单设计。
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui segment items content-experience">
+                            <h3 class="secondary-title">
+                                <i class="wait icon"></i>
+                                <span class="secondary-title-ch">工作经验</span>
+                                <span class="secondary-title-en">Experience</span>
+                            </h3>
+                            <div class="item teritary-block">
+                                <div class="ui list">
+                                    <div class="item">
+                                        <span class="header">
+                                            <i class="world icon"></i>
+                                            <span class="content">世包中心GPC</span>
+                                            
+                                        </span>
+                                        <div class="ui bulleted list">
+                                            <span class="description">全程参与世包中心 “英雄设” 平台开发，负责该平台主要模块的前端开发和部分组件编写。使用 Bootstrap 、 jQuery 、结合 Js template 引擎模版，基于 Laravel 进行开发。</span>
+                                            <div class="item">
+                                                <span class="content">
+                                                    完成网站 “寻知阁” 模块所有界面和功能开发
+                                                </span>
+                                            </div>
+                                            <div class="item">
+                                                <span class="content">
+                                                    完成网站 “任务墙” 模块所有界面和功能开发
+                                                </span>
+                                            </div>
+                                            <div class="item">
+                                                <span class="content">
+                                                    完成网站登录注册流程开发
+                                                </span>
+                                            </div>
+                                            <div class="item">
+                                                <span class="content">
+                                                    完成网站部分通用组件和动效编写
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui divider"></div>
+
+                                    <div class="item">
+                                        <span class="header">
+                                            <i class="world icon"></i>
+                                            <span class="content">十六番</span>
+                                        </span>
+                                        <div class="ui bulleted list">
+                                            <span class="description">参与后台管理系统功能开发及重构，参与前台网站的组件开发与优化</span>
+                                            <div class="item">
+                                                <span class="content">
+                                                    使用 Bootstrap 和 jQuery UI 完成后台系统推荐用户功能开发(CRUD)
+                                                </span>
+                                            </div>
+                                            <div class="item">
+                                                <span class="content">
+                                                    完成后台系统分类搜索、排序等功能开发
+                                                </span>
+                                            </div>
+                                            <div class="item">
+                                                <span class="content">
+                                                    完成部分前台网站管理员管理功能的开发
+                                                </span>
+                                            </div>
+                                            <div class="item">
+                                                <span class="content">
+                                                    参与网站手机版开发，完成从页面到app的跳转功能。
+                                                </span>
+                                            </div>
+                                            <div class="item">
+                                                <span class="content">
+                                                    用户体验优化及bug修复
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="ui segment items content-project" style="height: 200px;">
+                            
+                            <h3 class="secondary-title">
+                                <i class="archive icon"></i>
+                                <span class="secondary-title-ch">脚脚脚脚</span>
+                                <span class="secondary-title-en">Project</span>
+                            </h3>
+
+                        </div> -->
+                    </div>
                 </div>
-                <div class="extra content">
-                    <a><i class="user icon"></i> Graduate in 2017 </a>
-                </div>
+
             </div>
+
         </div>
+
+        <div class="ui divider"></div>
+
+        <div class="ui centered banner ad footer">
+            Generated by zhouzihanntu
+        </div>
+
+        <!--  Defining Angle Gradient Colors  --> 
+        <svg width="0" height="0">
+            <defs>
+                <linearGradient id="cl1" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+                    <stop stop-color="green"/>
+                    <stop offset="100%" stop-color="green"/>
+                </linearGradient>
+            </defs>
+        </svg>
 
 
         <script type="text/javascript" src="assets/jquery-3.1.1.min.js"></script>
-        <script src="semantic/dist/semantic.min.js"></script>
+        <script type="text/javascript" src="assets/semantic.min.js"></script>
         <script type="text/javascript">
             $('.briefInfo .image').dimmer({
                 on: 'hover'
