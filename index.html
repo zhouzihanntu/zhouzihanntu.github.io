@@ -55,7 +55,7 @@
             }
 
             .ui.items>.teritary-block{
-                margin: 0 0 0 10px;
+                margin: 0 0 20px 20px;
             }
 
             .ui.bulleted.list > .description{
@@ -198,7 +198,7 @@
                     {% } %}
                 </div>
             </div>
-            <div class="six wide column header-contact">
+            <div class="six wide column header-contact" style="padding-top: 50px;">
                 <div class="middle aligned content">
                     <div class="ui list">
                         {% for (var i = 0; i<o.contact.length; i++) { %}
@@ -244,7 +244,6 @@
                 <div class="middle aligned content">
                     <span class="header">
                         {%= o[i].school%}
-                        <span class="meta">({%= o[i].period%})</span>
                     </span>
                     <div class="meta">
                         <div class="ui list">
@@ -419,8 +418,7 @@
                     name: {
                         name: '周子涵',
                         title: [
-                            '前端工程师',
-                            'Web工程师'
+                            '软件开发工程师'
                         ]
                     },
                     contact: [
@@ -438,40 +436,41 @@
                             type: 'github',
                             content: 'https://github.com/zhouzihanntu',
                             link: 'https://github.com/zhouzihanntu'
-                        },
-                        {
-                            type: 'css3',
-                            content: 'http://codepen.io/zhouzihanntu',
-                            link: 'http://codepen.io/zhouzihanntu'
-                        },
-                        {
-                            type: 'rss',
-                            content: 'http://blog.csdn.net/zhouzihanntu',
-                            link: 'http://blog.csdn.net/zhouzihanntu'
                         }
                     ],
                 },
                 education: [
                     {
+                        school: '中国科学技术大学',
+                        logoPath: 'assets/ustcblue.jpg',
+                        //period: '2018 - 2021',
+                        items: [
+                            {
+                                type: 'circle outline',
+                                content: '2018 - 2021'
+                            },
+                            {
+                                type: 'university',
+                                content: '硕士 计算机科学与技术'
+                            },
+                            {
+                                type: 'marker',
+                                content: '计算机科学与技术学院'
+                            }
+                        ]
+                    },
+                    {
                         school: '重庆邮电大学',
                         logoPath: 'assets/cqupt.jpg',
-                        period: '2013 - 2017',
+                        //period: '2013 - 2017',
                         items: [
+                            {
+                                type: 'circle outline',
+                                content: '2013 - 2017'
+                            },
                             {
                                 type: 'university',
                                 content: '本科 信息工程'
-                            },
-                            {
-                                type: 'trophy',
-                                content: '专业排名前 10%'
-                            },
-                            {
-                                type: 'trophy',
-                                content: '2015-2016 校三等奖学金'
-                            },
-                            {
-                                type: 'trophy',
-                                content: '2016-2017 校三等奖学金'
                             },
                             {
                                 type: 'marker',
@@ -497,6 +496,9 @@
                         },
                         {
                             content: '可阅读英文技术文档，翻译相关技术文章。',
+                        },
+                        {
+                            content: '研究生入学考试英语91/100。',
                         }
                     ]
                 },
@@ -517,11 +519,11 @@
                         link: 'https://github.com/laravel-china/laravel-docs'
                     },
                     {
-                        title: 'zzh-vue-demo',
+                        title: 'vue-demo',
                         intro: '使用 Vue + Vue-router + Vuex 构建的一个博客项目',
                         link: 'https://github.com/zhouzihanntu/zzh-vue-demo'
-                    },
-                    {
+                    }
+                    /*{
                         title: 'browser_identifier',
                         intro: '识别当前浏览器的一个 NPM 包',
                         link: 'https://www.npmjs.com/package/browser_identifier'
@@ -545,59 +547,33 @@
                         title: 'Hadoop Java API Practice',
                         intro: 'Operate hdfs filesystem in hadoop with Java API',
                         link: 'https://github.com/zhouzihanntu/Hadoop-Java-API-Practice'
-                    }
+                    }*/
                 ],
                 skills: [
                     {
-                        domain: 'Web开发',
+                        domain: '理论基础',
                         items: [
                             {
-                                name: 'HTML/CSS',
+                                name: '基础课程',
                                 description: [
-                                    '熟悉 W3C 标准，能根据 HTML 语义化和 CSS 模块化实现布局和效果。'
+                                    "数据结构、操作系统、计算机网络等等等"
                                 ],
                             },
                             {
-                                name: 'Javascript',
+                                name: '',
                                 description: [
-                                    '熟悉 ES6 基本语法和模块打包，能独立完成功能模块开发和单元测试编写。'
-                                ]
-                            },
-                            {
-                                name: '项目实践',
-                                description: [
-                                    '使用 Vue.js 和 Gulp 构建工具开发单页应用，熟悉 Less 语法；',
-                                    '使用 Webpack 构建项目，使用 Rollup.js 完成模块打包并编写单元测试；',
-                                    '对基于 Node.js 的后端开发有了解，能完成简单的接口开发；',
-                                    '熟悉 Bootstrap 和 jQuery 等基础框架，项目中使用过 Laravel 后端框架。'
+                                    
                                 ],
                             }
                         ]
                     },
                     {
-                        domain: '其他',
+                        domain: '编程语言',
                         items: [
                             {
                                 description: [
-                                    '能使用 Python 和 Java 实现简单需求。'
+                                    '能较熟悉使用 Python 和简单使用 Java 编程。'
                                 ],
-                                // link: {
-                                //     text: '压缩文件和帧结构解析：Ethernet-Frameparser',
-                                //     address: 'https://github.com/zhouzihanntu/Ethernet-Frameparser'
-                                // }
-                            },
-                            // {
-                            //     description: [
-                            //     ],
-                            //     link: {
-                            //         text: '操作 Hadoop 分布式文件系统：Hadoop-Java-API-Practice',
-                            //         address: 'https://github.com/zhouzihanntu/Hadoop-Java-API-Practice'
-                            //     }
-                            // },
-                            {
-                                description: [
-                                    '熟悉持续集成开发流程。'
-                                ]
                             },
                             {
                                 description: [
@@ -606,40 +582,28 @@
                             },
                             {
                                 description: [
-                                    '熟练使用 Git 版本控制工具配合项目开发，熟悉 Charles 抓包工具的使用；熟悉 Photoshop 基本操作，能完成简单设计。'
+                                    '熟练使用 Git 版本控制工具配合项目开发。'
                                 ]
                             }
                         ]
                     }
                 ],
                 experience: [
-                    {
+                    /*{
                         company: '书香云集',
                         title: '前端开发',
                         start: '2016.12',
                         end: '2017.6',
                         description: '参与书香云集 H5 产品开发和书香云集微信小程序开发，开发中主要使用到 Vue.js 框架和 Gulp 构建工具。',
-                        detail: [
-                            '书香云集微信小程序开发，主要负责书籍目录分页界面的显示和功能开发',
-                            '完成书香云集 App 内嵌功能开发（包括签到抽奖、帮助与反馈等）',
-                            '完成书香云集各类活动开发（包括“好书盘点”、“闹元宵”等活动）',
-                            '完成书香云集专题、促销活动通用模板开发',
-                            '参与安夏书院网站 bug 修复，基于 Node.js，使用到 AntD、React + Redux、Webpack 等技术',
-                            '完成部分功能模块的开发和打包，并使用 Mocha 测试框架进行单元测试编写'
-                        ]
+                        detail: []
                     },
                     {
                         company: '世包中心GPC',
                         title: '前端开发',
                         start: '2016.07',
                         end: '2016.11',
-                        description: '全程参与世包中心 “英雄设” 平台开发，负责该平台主要模块的前端开发和部分组件编写。使用 Bootstrap 、jQuery 结合模版引擎，基于 Laravel 框架进行开发。',
-                        detail: [
-                            '完成网站 “寻知阁” 模块所有界面和前端功能开发',
-                            '完成网站 “任务墙” 模块所有界面和前端功能开发',
-                            '完成网站登录注册流程前端开发',
-                            '完成网站部分前端通用组件和动效编写'
-                        ]
+                        description: '参与世包中心 “英雄设” 平台开发，负责该平台主要模块的前端开发和部分组件编写。使用 Bootstrap 、jQuery 结合模版引擎，基于 Laravel 框架进行开发。',
+                        detail: []
                     },
                     {
                         company: '十六番',
@@ -647,14 +611,8 @@
                         start: '2015.12',
                         end: '2016.5',
                         description: '参与“十六番”网站后台管理系统功能开发及重构，参与前台网站的组件开发与优化。',
-                        detail: [
-                            '使用 Bootstrap 和 jQuery UI 完成后台系统推荐用户功能开发(CRUD)',
-                            '完成后台系统分类搜索、排序等功能开发',
-                            '完成部分前台网站管理员管理功能的开发',
-                            '参与网站手机版开发，完成从页面到app的跳转功能',
-                            '用户体验优化及 bug 修复'
-                        ]
-                    }
+                        detail: []
+                    }*/
                 ]
             }
 
