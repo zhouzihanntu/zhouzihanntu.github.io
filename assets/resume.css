@@ -1,0 +1,136 @@
+<style type="text/css">
+            body{background-color: #f1f1f1;font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;}
+            /*.container{margin-top: 30px; text-align: center;}*/
+            .container{
+                background-color: #ffffff;
+                margin: 0 13% 0 13%;
+            }
+            /*.QRCodeContainer{width: 100%;height: 100%;background-color: #f6f6f6;}*/
+            /*.QRCodeContainer img{width: 100%;}*/
+
+            .ui.header > .icon {
+                display: inline-block;
+                margin: 0 .25rem 0 .25em;
+                font-size: .875em; 
+                padding-top: .165em; 
+                vertical-align: middle;
+                line-height: 0.5em;
+            }
+
+            .ui.segment {
+                position: relative;
+                background: #FFF;
+                box-shadow: 0 0px 5px 0px #f1f1f1;
+                margin: 1rem 0;
+                padding: 1em;
+                border-radius: .28571429rem;
+                border: none;
+            }
+
+            .ui.segment.items:hover{
+                border: 1px solid #f1f1f1;
+            }
+
+            .ui.celled.grid > .row > .column.header-name, .ui.celled.grid > .row > .column.header-contact, .ui.celled.grid > .row > .column.header-avatar{
+                padding: 2.5em 2.5em;
+                box-shadow: none;
+            }
+
+            .ui.celled.grid > .row > .column.header-avatar{
+                padding: 1em;
+            }
+
+            .ui.celled.grid > .row > .column.header-name > .ui.huge.header{
+                font-size: 5em;
+                margin-top: 0.5em;
+            }
+
+            .ui.celled.grid > .row > .column.header-name > .ui.large.header{
+                font-size: 1.4em;
+            }
+
+
+            .header-contact .item{
+                font-size: 1.3em;
+            }
+
+            .ui.tiny.image{
+                width: 60px;
+            }
+
+            .ui.items>.teritary-block{
+                margin: 0 0 20px 20px;
+            }
+
+            .ui.bulleted.list > .description{
+                margin-bottom: 0.75em;
+            }
+
+            .secondary-title{
+                color: #999;
+                padding: 0;
+                margin: 0 0 1.5em 0.5em;
+            }
+
+            .secondary-title-ch{
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            .secondary-title-en{
+                font-size: 16px;
+                color: #677;
+                font-variant: small-caps;
+                font-weight: 700;
+            }
+
+            .teritary-block .ui.list .item{
+                max-width: 560px;
+            }
+
+            .ui.centered.banner.ad.footer{
+                width: 500px;
+                color: #555;
+                text-align: center;
+                font-weight: 900;
+                font-size: 2em;
+                line-height: 2em;
+                background-color: #ddd;
+            }
+
+            .ui.centered.banner.ad.footer .tips{
+                color: #999;
+                font-weight: 200;
+                font-size: 0.6em;
+            }
+
+            /**** progress bar ****/
+                /* Load animation */
+                @-webkit-keyframes load { 0% {
+                    stroke-dashoffset:0
+                    }
+                }
+                @-moz-keyframes load { 0% {
+                    stroke-dashoffset:0
+                    }
+                }
+                @keyframes load { 0% {
+                    stroke-dashoffset:0
+                    }
+                }
+
+                /* Container */
+                .progress {height: 7.5em;position: relative;display: inline-block;padding: 0;text-align: center;margin: 0;}
+                /* Item */
+                .progress>li {display: inline-block;position: relative;text-align: center;color: #93A2AC;font-family: Lato;font-weight: 100;margin: 0;margin-right: 3em;}
+                .progress>li:before {content: attr(data-name);position: absolute;width: 100%;left: 5em;bottom: 2.5rem;font-weight: 400;}
+                .progress>li:after {content: attr(data-percent);position: absolute;width: 100%;top: 2.3rem;left: 0;font-size: 1.5rem;text-align: center;}
+                .progress svg {width: 6rem;height: 6rem;}
+                .progress svg:nth-child(2) {position: absolute;left: 0;top: 0;transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-ms-transform: rotate(-90deg);}
+                .progress svg:nth-child(2) path {fill: none;stroke-width: 25;stroke-dasharray: 629;stroke: rgba(255, 255, 255, 0.9);-webkit-animation: load 10s;-moz-animation: load 10s;-o-animation: load 10s;animation: load 10s;}
+            /**** progress bar end ****/
+
+            .progress>li:last-child{
+                margin-left: 3em;
+            }
+        </style>
